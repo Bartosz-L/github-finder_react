@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Search from "./components/users/Search";
@@ -50,9 +49,5 @@ class App extends Component {
     );
   }
 }
-
-App.propTypes = {
-  searchUsers: PropTypes.func.isRequired
-};
 
 export default App;
