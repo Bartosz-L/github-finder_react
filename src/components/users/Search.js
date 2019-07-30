@@ -12,8 +12,12 @@ class Search extends Component {
 
   handleFormSubmit = e => {
     e.preventDefault();
-    this.props.searchUsers(this.state.text);
-    this.setState({ text: '' });
+    if (this.state.text === '') {
+      this.props.setAlert('Please eneter something', 'light');
+    } else {
+      this.props.searchUsers(this.state.text);
+      this.setState({ text: '' });
+    }
   };
   render() {
     const { clearUsers, showClearBtn } = this.props;
