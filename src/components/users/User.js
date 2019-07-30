@@ -38,9 +38,9 @@ class User extends Component {
         </Link>
         Hireable:
         {hireable ? (
-          <i className="fas fa-check text-success mx-1" />
+          <i className="fas fa-check text-success mx" />
         ) : (
-          <i className="fas fa-times-circle text-danger mx-1" />
+          <i className="fas fa-times-circle text-danger mx" />
         )}
         <div className="card grid-2">
           <div className="all-center">

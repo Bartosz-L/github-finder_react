@@ -8,7 +8,7 @@ const Navbar = props => {
   return (
     <nav className="navbar bg-primary">
       <h1>
-        <i className={`mx-1 ${icon}`} />
+        <i className={`mx ${icon}`} />
         {title}
       </h1>
       <ul>
