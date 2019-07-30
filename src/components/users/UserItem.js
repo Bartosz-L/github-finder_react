@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const UserItem = props => {
   const { avatar_url, login, html_url } = props.user;
@@ -10,7 +10,7 @@ const UserItem = props => {
         src={avatar_url}
         alt="avatar"
         className="round-img"
-        style={{ width: "60px" }}
+        style={{ width: '60px' }}
       />
       <h3>{login}</h3>
       <div>

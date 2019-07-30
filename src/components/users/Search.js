@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Search extends Component {
   state = {
-    text: ""
+    text: ''
   };
 
   handleChangeInput = e => {
@@ -13,7 +13,7 @@ class Search extends Component {
   handleFormSubmit = e => {
     e.preventDefault();
     this.props.searchUsers(this.state.text);
-    this.setState({ text: "" });
+    this.setState({ text: '' });
   };
   render() {
     const { clearUsers, showClearBtn } = this.props;
