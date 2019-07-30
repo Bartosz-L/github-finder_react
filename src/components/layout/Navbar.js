@@ -8,7 +8,7 @@ const Navbar = props => {
   return (
     <nav className="navbar bg-primary">
       <h1>
-        <i className={icon} style={{ marginRight: '10px' }} />
+        <i className={`mx-1 ${icon}`} />
         {title}
       </h1>
       <ul>
