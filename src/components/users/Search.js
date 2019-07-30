@@ -16,6 +16,8 @@ class Search extends Component {
     this.setState({ text: "" });
   };
   render() {
+    const { clearUsers, showClearBtn } = this.props;
+
     return (
       <div>
         <form onSubmit={this.handleFormSubmit} className="form">
@@ -32,12 +34,19 @@ class Search extends Component {
             className="btn btn-dark btn-block"
           />
         </form>
+        {showClearBtn && (
+          <button className="btn btn-light btn-block" onClick={clearUsers}>
+            Clear
+          </button>
+        )}
       </div>
     );
   }
 }
 
 Search.propTypes = {
-  searchUsers: PropTypes.func.isRequired
+  searchUsers: PropTypes.func.isRequired,
+  clearUsers: PropTypes.func.isRequired,
+  showClearBtn: PropTypes.bool.isRequired
 };
 export default Search;
